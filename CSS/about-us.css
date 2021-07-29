@@ -1,0 +1,42 @@
+body{
+background-image: url(../img/bg-fbi.png);
+background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+nav li:hover{
+    transition: 3s;
+    background-color: blue;
+}
+
+section, ol, ul{
+    list-style: none;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+footer{
+    text-align: center;
+    color: rgb(88, 88, 238);
+}

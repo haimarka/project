@@ -1,0 +1,158 @@
+body{
+    background-image: linear-gradient(to top, #ffbb2a 0%, #f9d423 100%);    
+}
+
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+nav li:hover{
+    transition: 3s;
+    background-color: blue;
+}
+
+
+.spiner-2{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    box-shadow: 10px 0px 15px red;
+    border-radius: 50%;
+    animation: spin-around 1s  infinite;  
+}
+
+@keyframes spin-around {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+h1{
+    font-size: 50px;
+    font-style: oblique;
+    text-decoration: underline red dotted;
+}
+
+section, footer{
+    text-align: center;
+}
+
+
+.helf-1{
+    height: 300px;
+    width: 900px;
+    border-top-right-radius: 100%;
+    border-top-left-radius: 100%;
+    margin: 8px;
+}
+
+.helf-2{
+    position: absolute;
+    height: 300px;
+    width: 900px;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    margin-left: -29.5%;
+    margin-top: -8%;
+    transition: 5s; 
+}
+
+.helf-2:hover{ 
+    transform: translateY(130px);
+}
+
+.mainCircles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 35vh;
+}
+
+.circles{
+    margin-top: 8vh;
+    height: 50vh;
+    width: 28%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+}
+
+@media screen and (max-width:1024px) {
+    .helf-2{
+        position: relative;
+        margin-left: 1%;
+        transform: translateY(-40px);
+        
+    }
+
+    .helf-2:hover{ 
+        transform: translateY(70px);
+        transition: 2s;
+        
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    h1{
+        margin-left: 20%;
+    }
+    p{
+        margin-left: 10%;
+    }
+    
+    .helf-2{
+        transform: translateY(-130px);
+    }
+    .helf-2:hover{ 
+        transform: translateY(50px);
+        transition: 2s;
+        
+    }
+    .mainCircles{
+       margin-left: 20%;
+    }
+    .circles{
+        width: 35vw;
+    }
+    footer{
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    p{
+        width: 100vw;
+        margin-left: 50%;
+    }
+    .helf-2{
+        transform: translateY(-150px);
+    }
+    .mainCircles{
+        width: 100%;   
+    }
+    .circles{
+       width: 100%;
+       margin-left: 40%;
+    }
+    h1{
+       margin-left: 400px;
+    }
+    footer{
+        margin-left: 330px;
+    }
+    
+}
+
+
+
+
+
